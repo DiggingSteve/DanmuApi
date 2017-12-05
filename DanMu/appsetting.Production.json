@@ -1,0 +1,31 @@
+﻿
+{
+  "Kestrel": {
+    "Endpoints": {
+      "Localhost": {
+        "Address": "localhost",
+        "Port": "8082"
+      },
+      "LocalhostHttps": {
+        "Address": "localhost",
+        "Port": "8083",
+        "Certificate": "Https"
+      }
+    }
+  },
+  "Certificate": {
+    "HTTPS": {
+      "Source": "Store",
+      "StoreLocation": "LocalMachine",
+      "StoreName": "MyName",
+      "Subject": "CN=localhost",
+      "AllowInvalid": true
+    }
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  }
+}
